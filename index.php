@@ -66,6 +66,7 @@
     p{
         font-size: 0.875rem;
         text-align: left;
+        margin-bottom: 10px;
     }
     h2{
         color: #3c4043;
@@ -73,7 +74,7 @@
         font-size: 1.5rem;
         line-height: 1.333;
         margin: 0;
-        padding: 64px 0 0 0;
+        padding: 20px 0 0 0;
         text-align: left;
     }
 
