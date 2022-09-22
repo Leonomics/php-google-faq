@@ -19,27 +19,31 @@
         $faqs = [
             [
                 "domanda" => "<h2>Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?<h2>",
-                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
+                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
             ],
             [
                 "domanda" => "<h2>Come fa Google a proteggere la mia privacy e a tenere le mie informazioni al sicuro?<h2>",
-                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
+                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
             ],
             [
                 "domanda" => "<h2>Perché il mio account è associato a un paese?<h2>",
-                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
+                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
             ],
             [
                 "domanda" => "<h2>Stabilire il paese associato al tuo account<h2>",
-                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
+                "risposta" => "<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p><p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>"
             ],
         ];
-
-
+    ?>
+    <?php
         foreach($faqs as $faq){
-            echo $faq["domanda"]; ?> <br>
-            <?php
-            echo $faq["risposta"]; ?> <br>
+            ?>
+            <div class="container">
+                <?php echo $faq["domanda"]; ?> <br>
+            </div>
+            <div class="container">
+                <?php echo $faq["risposta"]; ?> <br>
+            </div>
             <?php
         }
         ?>
@@ -61,7 +65,7 @@
     }
     p{
         font-size: 0.875rem;
-        text-align: center;
+        text-align: left;
     }
     h2{
         color: #3c4043;
@@ -70,14 +74,14 @@
         line-height: 1.333;
         margin: 0;
         padding: 64px 0 0 0;
-        text-align: center;
+        text-align: left;
     }
 
     img{
         max-width: 100%;
     }
 
-    .headerItemsContainer{
+    .container{
         max-width: 747px;
         margin:0 auto;
     }
